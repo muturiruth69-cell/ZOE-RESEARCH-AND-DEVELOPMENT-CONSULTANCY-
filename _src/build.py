@@ -23,7 +23,7 @@ OUT = SRC.parent
 PARTIALS = SRC / "partials"
 
 THREE = ''  # 3D banners retired in favour of real photography
-MAIN = '<script src="assets/js/main.js?v=20261125j" defer></script>'
+MAIN = '<script src="assets/js/main.js?v=20261126a" defer></script>'
 
 
 def read(p: Path) -> str:

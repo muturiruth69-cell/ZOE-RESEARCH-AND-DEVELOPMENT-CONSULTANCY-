@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261125j">
+<link rel="stylesheet" href="assets/css/style.css?v=20261126a">
 <script>
   /* Colour mode before first paint: link override, saved choice, else light */
   (function (d) {
@@ -25,13 +25,6 @@
       t = 'light';
     }
     d.setAttribute('data-theme', t);
-    var signedIn = false;
-    try { signedIn = !!localStorage.getItem('zoe-session'); } catch (e) {}
-    if (!signedIn) {
-      d.classList.add('gated');
-      /* Only the landing (home) page is public: send visitors there to log in */
-      if (!/(^|\/)(index\.html)?$/.test(location.pathname)) { location.replace('index.html?login=1'); }
-    }
   })(document.documentElement);
 </script>
 <script type="application/ld+json">

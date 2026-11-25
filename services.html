@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261125j">
+<link rel="stylesheet" href="assets/css/style.css?v=20261126a">
 <script>
   /* Colour mode before first paint: link override, saved choice, else light */
   (function (d) {
@@ -25,13 +25,6 @@
       t = 'light';
     }
     d.setAttribute('data-theme', t);
-    var signedIn = false;
-    try { signedIn = !!localStorage.getItem('zoe-session'); } catch (e) {}
-    if (!signedIn) {
-      d.classList.add('gated');
-      /* Only the landing (home) page is public: send visitors there to log in */
-      if (!/(^|\/)(index\.html)?$/.test(location.pathname)) { location.replace('index.html?login=1'); }
-    }
   })(document.documentElement);
 </script>
 <script type="application/ld+json">
@@ -135,39 +128,6 @@
 </svg>
 
 <!-- ============ LOGIN DIALOG (opened from the Log In button) ============ -->
-<div class="auth-modal" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" hidden>
-  <div class="auth-modal__backdrop" data-auth-close></div>
-  <div class="auth-card">
-    <button class="auth-card__close" type="button" data-auth-close aria-label="Close">&times;</button>
-    <img class="auth-card__logo" src="assets/img/zoe-logo.png?v=20261125j" alt="ZOE Research &amp; Development Consultancy Company Limited" width="260" height="104">
-    <div class="auth-tabs" role="tablist">
-      <button type="button" role="tab" data-go="login" aria-selected="true">Log In</button>
-      <button type="button" role="tab" data-go="register" aria-selected="false">Create Account</button>
-    </div>
-
-    <form class="auth-step" data-step="login" novalidate>
-      <h2 id="auth-title">Welcome back</h2>
-      <p class="auth-card__lead">Enter your login details to access the full ZOE website.</p>
-      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
-      <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
-      <p class="auth-msg" role="alert"></p>
-      <button class="btn btn--gold btn--lg btn--block" type="submit">Log In <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
-      <p class="auth-card__switch">New to ZOE? <button type="button" class="linkish" data-go="register">Create an account</button></p>
-    </form>
-
-    <form class="auth-step" data-step="register" novalidate hidden>
-      <h2>Create your account</h2>
-      <p class="auth-card__lead">It takes less than a minute.</p>
-      <label>Full name<input name="name" type="text" autocomplete="name" required></label>
-      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
-      <label>Password<input name="password" type="password" autocomplete="new-password" minlength="6" required></label>
-      <label>Confirm password<input name="confirm" type="password" autocomplete="new-password" minlength="6" required></label>
-      <p class="auth-msg" role="alert"></p>
-      <button class="btn btn--green btn--lg btn--block" type="submit">Create Account</button>
-      <p class="auth-card__switch">Already have an account? <button type="button" class="linkish" data-go="login">Log in</button></p>
-    </form>
-  </div>
-</div>
 
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -175,16 +135,13 @@
 <header class="brandbar">
   <div class="container">
     <a class="logo" href="index.html" aria-label="ZOE Research &amp; Development Consultancy, home">
-      <img src="assets/img/zoe-logo.png?v=20261125j" alt="ZOE Research Consultancy logo" width="160" height="66">
+      <img src="assets/img/zoe-logo.png?v=20261126a" alt="ZOE Research Consultancy logo" width="160" height="66">
     </a>
     <div class="brandbar__title">
       <p class="brandbar__name">ZOE Research and Development Consultancy</p>
       <p class="brandbar__slogan">Turning Problems into <span>Opportunities</span></p>
     </div>
     <div class="brandbar__actions">
-      <span class="user-chip" data-user-chip hidden><svg aria-hidden="true"><use href="#i-users"/></svg><span data-user-name></span></span>
-      <button class="btn btn--outline btn--sm" type="button" data-signout hidden>Sign Out</button>
-      <button class="btn btn--green btn--login" type="button" data-login-open><svg aria-hidden="true"><use href="#i-users"/></svg>Log In</button>
       <a class="btn btn--gold" href="contact.html">Contact Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </div>
@@ -510,7 +467,7 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a class="footer-logo" href="index.html" aria-label="ZOE Research &amp; Development Consultancy, home"><img src="assets/img/zoe-logo.png?v=20261125j" alt="ZOE Research Consultancy logo" width="136" height="56"></a>
+        <a class="footer-logo" href="index.html" aria-label="ZOE Research &amp; Development Consultancy, home"><img src="assets/img/zoe-logo.png?v=20261126a" alt="ZOE Research Consultancy logo" width="136" height="56"></a>
         <p class="footer-slogan">Turning Problems into <span class="gold-text">Opportunities</span></p>
         <p>Research, market intelligence, applied AI, innovation and training for organisations that need to make important decisions well.</p>
       </div>
@@ -549,6 +506,6 @@
   </div>
 </footer>
 
-<script src="assets/js/main.js?v=20261125j" defer></script>
+<script src="assets/js/main.js?v=20261126a" defer></script>
 </body>
 </html>
