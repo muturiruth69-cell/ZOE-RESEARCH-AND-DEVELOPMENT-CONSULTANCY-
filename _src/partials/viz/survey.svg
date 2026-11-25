@@ -1,0 +1,13 @@
+<svg class="viz__svg" viewBox="0 0 520 440" role="img" aria-label="Sample survey results shown as horizontal bars">
+  <rect class="vz-card" x="1" y="1" width="518" height="438" rx="10"/>
+  <text class="vz-m" x="32" y="46" font-size="13" letter-spacing="1.5">SAMPLE FIELD SURVEY</text>
+  <text class="vz-t" x="32" y="78" font-size="19">What matters most to customers?</text>
+  <g font-size="13">
+    <text class="vz-m" x="32" y="122">Price</text><rect class="vz-soft" x="32" y="132" width="456" height="22" rx="11"/><rect class="vz-g7" x="32" y="132" width="380" height="22" rx="11"/><text class="vz-t" x="488" y="122" text-anchor="end">83%</text>
+    <text class="vz-m" x="32" y="186">Reliability</text><rect class="vz-soft" x="32" y="196" width="456" height="22" rx="11"/><rect class="vz-g" x="32" y="196" width="318" height="22" rx="11"/><text class="vz-t" x="488" y="186" text-anchor="end">70%</text>
+    <text class="vz-m" x="32" y="250">Customer service</text><rect class="vz-soft" x="32" y="260" width="456" height="22" rx="11"/><rect class="vz-au" x="32" y="260" width="262" height="22" rx="11"/><text class="vz-t" x="488" y="250" text-anchor="end">57%</text>
+    <text class="vz-m" x="32" y="314">Mobile payment</text><rect class="vz-soft" x="32" y="324" width="456" height="22" rx="11"/><rect class="vz-g3" x="32" y="324" width="214" height="22" rx="11"/><text class="vz-t" x="488" y="314" text-anchor="end">47%</text>
+  </g>
+  <rect class="vz-soft" x="32" y="370" width="456" height="44" rx="6"/>
+  <circle class="vz-au" cx="56" cy="392" r="9"/><text class="vz-t" x="76" y="397" font-size="13">Finding: price leads, but service drives loyalty</text>
+</svg>

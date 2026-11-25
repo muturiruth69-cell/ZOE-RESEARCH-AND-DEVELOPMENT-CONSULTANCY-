@@ -1,0 +1,10 @@
+# Publish the website only. Internal company documents stay off GitHub.
+*
+!.gitignore
+!README.md
+!*.html
+!_src/
+!_src/**
+!assets/
+!assets/**
+_shot.html

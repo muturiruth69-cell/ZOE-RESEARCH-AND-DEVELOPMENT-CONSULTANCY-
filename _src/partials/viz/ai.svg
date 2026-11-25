@@ -1,0 +1,22 @@
+<svg class="viz__svg" viewBox="0 0 520 440" role="img" aria-label="Your documents feed an AI assistant that gives sourced answers">
+  <rect class="vz-card" x="1" y="1" width="518" height="438" rx="10"/>
+  <text class="vz-m" x="32" y="46" font-size="13" letter-spacing="1.5">YOUR KNOWLEDGE, PUT TO WORK</text>
+  <rect class="vz-soft" x="32" y="80" width="110" height="64" rx="10"/><rect class="vz-g7" x="46" y="94" width="54" height="7" rx="3"/><rect class="vz-g3" x="46" y="108" width="80" height="6" rx="3"/><rect class="vz-g3" x="46" y="120" width="66" height="6" rx="3"/>
+  <rect class="vz-soft" x="32" y="162" width="110" height="64" rx="10"/><rect class="vz-au" x="46" y="176" width="54" height="7" rx="3"/><rect class="vz-g3" x="46" y="190" width="80" height="6" rx="3"/><rect class="vz-g3" x="46" y="202" width="60" height="6" rx="3"/>
+  <rect class="vz-soft" x="32" y="244" width="110" height="64" rx="10"/><rect class="vz-g" x="46" y="258" width="54" height="7" rx="3"/><rect class="vz-g3" x="46" y="272" width="80" height="6" rx="3"/><rect class="vz-g3" x="46" y="284" width="70" height="6" rx="3"/>
+  <text class="vz-m" x="87" y="334" text-anchor="middle" font-size="12">Policies, reports, data</text>
+  <path class="vz-ln-au" d="M142 112C190 112 190 194 232 194M142 194H232M142 276C190 276 190 194 232 194" stroke-width="2.5" stroke-dasharray="5 6"/>
+  <circle class="vz-gradbox" cx="282" cy="194" r="50"/>
+  <path d="M264 180 282 170 300 182M264 180 270 208 294 212 300 182M282 170 282 194 270 208M282 194 294 212M282 194 300 182" fill="none" stroke="#fff" stroke-width="2" opacity=".8"/>
+  <g fill="#fff"><circle cx="264" cy="180" r="4"/><circle cx="282" cy="170" r="4"/><circle cx="300" cy="182" r="4"/><circle cx="270" cy="208" r="4"/><circle cx="294" cy="212" r="4"/></g><circle cx="282" cy="194" r="5" fill="#B08D57"/>
+  <text class="vz-m" x="282" y="270" text-anchor="middle" font-size="12">Tested AI assistant</text>
+  <path class="vz-ln-au" d="M332 194H362" stroke-width="2.5" stroke-dasharray="5 6"/>
+  <rect class="vz-soft" x="362" y="120" width="128" height="148" rx="8"/>
+  <rect class="vz-g7" x="376" y="136" width="100" height="30" rx="10"/><text x="388" y="156" font-size="11" fill="#fff">Leave policy?</text>
+  <rect class="vz-card" x="376" y="176" width="100" height="56" rx="10"/>
+  <rect class="vz-g3" x="386" y="188" width="78" height="6" rx="3"/><rect class="vz-g3" x="386" y="200" width="64" height="6" rx="3"/><rect class="vz-au" x="386" y="214" width="40" height="8" rx="4"/>
+  <text class="vz-m" x="426" y="254" text-anchor="middle" font-size="11">Answer + source</text>
+  <rect class="vz-soft" x="32" y="362" width="456" height="50" rx="6"/>
+  <path d="M54 387l6 6 11-12" fill="none" stroke="#186A63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="vz-t" x="84" y="392" font-size="13">Grounded in your documents, tested before launch</text>
+</svg>

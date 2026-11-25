@@ -1,0 +1,8 @@
+<svg class="viz__svg" viewBox="0 0 520 440" role="img" aria-label="An idea validation funnel from many ideas to one tested product">
+  <rect class="vz-card" x="1" y="1" width="518" height="438" rx="10"/>
+  <text class="vz-m" x="32" y="46" font-size="13" letter-spacing="1.5">VALIDATE BEFORE YOU INVEST</text>
+  <path class="vz-g3" d="M40 76H480L436 156H84Z"/><text x="260" y="122" text-anchor="middle" font-size="16" font-weight="700" fill="#0B1C2C">Many ideas explored</text>
+  <path class="vz-g" d="M88 166H432L396 246H124Z"/><text x="260" y="212" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Concepts tested with real users</text>
+  <path class="vz-g7" d="M128 256H392L360 336H160Z"/><text x="260" y="302" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Prototypes piloted</text>
+  <path class="vz-au" d="M164 346H356L334 410H186Z"/><text x="260" y="384" text-anchor="middle" font-size="16" font-weight="700" fill="#10263A">Ready to launch</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg class="viz__svg" viewBox="0 0 520 440" role="img" aria-label="Illustrative baseline and endline results compared">
+  <rect class="vz-card" x="1" y="1" width="518" height="438" rx="10"/>
+  <text class="vz-m" x="32" y="46" font-size="13" letter-spacing="1.5">MEASURING PROGRAMME IMPACT</text>
+  <text class="vz-t" x="32" y="78" font-size="19">Baseline vs endline</text>
+  <g font-size="12"><rect class="vz-g3" x="330" y="64" width="14" height="14" rx="3"/><text class="vz-m" x="350" y="76">Baseline</text><rect class="vz-g7" x="414" y="64" width="14" height="14" rx="3"/><text class="vz-m" x="434" y="76">Endline</text></g>
+  <path class="vz-grid" d="M40 140H488M40 210H488M40 280H488M40 350H488" stroke-width="1"/>
+  <rect class="vz-g3" x="62" y="270" width="36" height="80" rx="5"/><rect class="vz-g7" x="102" y="196" width="36" height="154" rx="5"/>
+  <rect class="vz-g3" x="192" y="250" width="36" height="100" rx="5"/><rect class="vz-g7" x="232" y="170" width="36" height="180" rx="5"/>
+  <rect class="vz-g3" x="322" y="290" width="36" height="60" rx="5"/><rect class="vz-g7" x="362" y="226" width="36" height="124" rx="5"/>
+  <g font-size="13" text-anchor="middle"><text class="vz-m" x="100" y="374">Income</text><text class="vz-m" x="230" y="374">School attendance</text><text class="vz-m" x="360" y="374">Savings</text></g>
+  <rect class="vz-soft" x="32" y="390" width="456" height="34" rx="10"/><text class="vz-m" x="260" y="412" text-anchor="middle" font-size="12">Illustration of how we report change over time</text>
+</svg>

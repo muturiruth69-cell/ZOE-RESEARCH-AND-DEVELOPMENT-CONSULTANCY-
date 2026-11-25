@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quality & Ethics | Responsible AI, Data Protection and Research Integrity at ZOE</title>
+<meta name="description" content="How ZOE protects research quality, participants and client data: our Responsible AI policy, data protection commitments, research ethics and academic integrity boundary.">
+<meta name="theme-color" content="#10263A">
+<meta property="og:site_name" content="ZOE Research & Development Consultancy">
+<meta property="og:title" content="Quality & Ethics | Responsible AI, Data Protection and Research Integrity at ZOE">
+<meta property="og:description" content="How ZOE protects research quality, participants and client data: our Responsible AI policy, data protection commitments, research ethics and academic integrity boundary.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261125j">
+<script>
+  /* Colour mode before first paint: link override, saved choice, else light */
+  (function (d) {
+    d.classList.add('js');
+    var t = null;
+    try { t = new URLSearchParams(location.search).get('theme') || localStorage.getItem('zoe-theme'); } catch (e) {}
+    if (true) {
+      t = 'light';
+    }
+    d.setAttribute('data-theme', t);
+    var signedIn = false;
+    try { signedIn = !!localStorage.getItem('zoe-session'); } catch (e) {}
+    if (!signedIn) {
+      d.classList.add('gated');
+      /* Only the landing (home) page is public: send visitors there to log in */
+      if (!/(^|\/)(index\.html)?$/.test(location.pathname)) { location.replace('index.html?login=1'); }
+    }
+  })(document.documentElement);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ZOE Research & Development Consultancy",
+  "slogan": "Turning Problems into Opportunities",
+  "telephone": "+254796808996",
+  "email": "info@zoeresearchconsultance.co.ke",
+  "address": { "@type": "PostalAddress", "streetAddress": "Wuyi Plaza, Westlands", "addressLocality": "Nairobi", "addressCountry": "KE" },
+  "openingHours": "Mo-Sa 08:00-17:00",
+  "areaServed": "East Africa"
+}
+</script>
+</head>
+<body>
+<!-- Shared SVG sprite: gradients + icons (kept renderable, not display:none, so gradients resolve) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gGold"><stop offset="0" stop-color="#B08D57"/><stop offset="1" stop-color="#B08D57"/></linearGradient>
+    <linearGradient id="gGreen"><stop offset="0" stop-color="#186A63"/><stop offset="1" stop-color="#186A63"/></linearGradient>
+    <linearGradient id="gDeep"><stop offset="0" stop-color="#10263A"/><stop offset="1" stop-color="#10263A"/></linearGradient>
+  </defs>
+
+  <symbol id="zoe-mark" viewBox="0 0 44 44">
+    <rect x="1" y="1" width="42" height="42" rx="3" fill="none" stroke="url(#gGold)" stroke-width="1.6"/>
+    <path d="M11 12.5h22" stroke="currentColor" stroke-width="3.4" stroke-linecap="square"/>
+    <path d="M11 31.5h22" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
+    <path d="M32 13.5 9.5 33.5" stroke="url(#gGold)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="32" cy="13.5" r="1.8" fill="#D9C7A4"/>
+  </symbol>
+
+  <symbol id="t-light" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="t-dark" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="t-emerald" viewBox="0 0 24 24"><path d="M5 19c0-8 5.5-13.5 15-14-.5 9.5-6 15-14 15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M5 19c3-4 6-6.5 9.5-8.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 9.5h8M8 12.5h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 16v-4M12 16V8M16 16v-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-3.6 10.8V16h7.2v-2.2A6 6 0 0 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 19h5M10.5 21.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 20a6 6 0 0 1 12 0M16 4.8a3.3 3.3 0 0 1 0 6.4M17.5 14.2A5.5 5.5 0 0 1 21 19.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.5 8.3-8 9.8C7.5 20.3 4 17 4 12V6Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l2 5-2.5 1.5a11 11 0 0 0 6.5 6.5L16 13.5l5 2V19a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.8-1.3A9.5 9.5 0 1 0 12 2.5Zm0 17.2a7.7 7.7 0 0 1-3.9-1.1l-.3-.2-2.8.8.8-2.7-.2-.3A7.7 7.7 0 1 1 12 19.7Zm4.3-5.8c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8.9-.3.2-.5.1a6.3 6.3 0 0 1-3.1-2.7c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2 4.7 4.7 0 0 0 1 2.5 10.8 10.8 0 0 0 4.1 3.7c1.5.7 2.1.7 2.9.6a2.4 2.4 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3Z" fill="currentColor"/></symbol>
+  <symbol id="i-play" viewBox="0 0 16 16"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 16 16"><path d="M4 2.5h3v11H4zM9 2.5h3v11H9z" fill="currentColor"/></symbol>
+
+  <!-- Service icons (64) -->
+  <symbol id="s-research" viewBox="0 0 64 64">
+    <rect x="12" y="7" width="32" height="42" rx="4" fill="#FFFDF8" stroke="#10263A" stroke-width="2.4"/>
+    <path d="M19 17h18M19 24h18M19 31h12" stroke="#10263A" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M19 40h6v-5h-6zM27 40h6v-9h-6z" fill="#186A63"/>
+    <circle cx="45" cy="45" r="12" fill="url(#gGold)"/>
+    <path d="m39.5 45 3.8 3.8 7-7.3" fill="none" stroke="#0E1311" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="s-intel" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="25" fill="url(#gDeep)"/>
+    <circle cx="32" cy="32" r="17" fill="none" stroke="#B9C9D4" stroke-opacity=".45" stroke-width="1.6"/>
+    <circle cx="32" cy="32" r="9" fill="none" stroke="#B9C9D4" stroke-opacity=".45" stroke-width="1.6"/>
+    <path d="M9 35h11l4-11 7 20 5-14 3 5h16" fill="none" stroke="url(#gGold)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="36" cy="30" r="2.6" fill="#D9C7A4"/>
+  </symbol>
+  <symbol id="s-ai" viewBox="0 0 64 64">
+    <path d="M32 6 54 19v26L32 58 10 45V19Z" fill="url(#gDeep)"/>
+    <g stroke="#B9C9D4" stroke-opacity=".7" stroke-width="1.6"><path d="M32 32 32 14M32 32 47 23M32 32 47 41M32 32 32 50M32 32 17 41M32 32 17 23M32 14 47 23 47 41 32 50 17 41 17 23Z" fill="none"/></g>
+    <g fill="#186A63"><circle cx="32" cy="14" r="3.4"/><circle cx="47" cy="23" r="3.4"/><circle cx="47" cy="41" r="3.4"/><circle cx="32" cy="50" r="3.4"/><circle cx="17" cy="41" r="3.4"/><circle cx="17" cy="23" r="3.4"/></g>
+    <circle cx="32" cy="32" r="7" fill="url(#gGold)"/>
+  </symbol>
+  <symbol id="s-innov" viewBox="0 0 64 64">
+    <path d="M32 7 55 20 32 33 9 20Z" fill="url(#gGold)"/>
+    <path d="M9 20 32 33v24L9 44Z" fill="#186A63"/>
+    <path d="M55 20 32 33v24l23-13Z" fill="#10263A"/>
+    <path d="M32 33v24M9 20l23 13 23-13" fill="none" stroke="#FAF7F0" stroke-opacity=".5" stroke-width="1.2"/>
+    <path d="M20.5 26.5v14M43.5 26.5v14" stroke="#FAF7F0" stroke-opacity=".25" stroke-width="1.2" stroke-dasharray="2 2"/>
+  </symbol>
+  <symbol id="s-academy" viewBox="0 0 64 64">
+    <path d="M32 18c-7-5-16-6-24-4v34c8-2 17-1 24 4Z" fill="#186A63"/>
+    <path d="M32 18c7-5 16-6 24-4v34c-8-2-17-1-24 4Z" fill="#10263A"/>
+    <path d="M32 18v34" stroke="url(#gGold)" stroke-width="2.6"/>
+    <path d="M14 22c5-1 10-.5 14 1.5M14 29c5-1 10-.5 14 1.5M14 36c5-1 10-.5 14 1.5M36 23.5c4-2 9-2.5 14-1.5M36 30.5c4-2 9-2.5 14-1.5" stroke="#FAF7F0" stroke-opacity=".5" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+    <path d="m32 4 3 6.2 6.8 1-5 4.7 1.2 6.7L32 19.4l-6 3.2 1.2-6.7-5-4.7 6.8-1Z" fill="url(#gGold)"/>
+  </symbol>
+
+  <!-- Sector / value icons (24, stroke) -->
+  <symbol id="c-gov" viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5M4.5 20h15M6 10.5V18M10 10.5V18M14 10.5V18M18 10.5V18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="c-ngo" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.4-7.5-10A4.2 4.2 0 0 1 12 7.6 4.2 4.2 0 0 1 19.5 10c0 5.6-7.5 10-7.5 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12h2l1.2-2 1.6 4 1.2-2h1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="c-corp" viewBox="0 0 24 24"><rect x="3" y="7.5" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 7.5V5.5a1.5 1.5 0 0 1 1.5-1.5h4a1.5 1.5 0 0 1 1.5 1.5v2M3 12.5h18" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="c-sme" viewBox="0 0 24 24"><path d="M13.5 4.5c3-1 5.5-1 6-.5s.5 3-.5 6l-6 6-5-5 6-6.5ZM8 11l-3 .5-2 2 4 1M13 16l-.5 3-2 2-1-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="15.5" cy="8.5" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="c-fin" viewBox="0 0 24 24"><ellipse cx="9" cy="7" rx="5.5" ry="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 7v5c0 1.4 2.5 2.5 5.5 2.5M3.5 12v5c0 1.4 2.5 2.5 5.5 2.5M14.5 7v3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m13 18 3-3 2 2 3.5-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="c-edu" viewBox="0 0 24 24"><path d="m2.5 9 9.5-4.5L21.5 9 12 13.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6.5 11v4.5c1.5 1.6 3.4 2.5 5.5 2.5s4-.9 5.5-2.5V11M21.5 9v5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="c-agri" viewBox="0 0 24 24"><path d="M12 21V10M12 13c-4 0-7-2.5-7-7 4 0 7 2.5 7 7ZM12 11c0-4 2.5-7 7-7 0 4.5-3 7-7 7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 21h12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="c-tech" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9.5" y="9.5" width="5" height="5" rx="1" fill="currentColor"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="v-excellence" viewBox="0 0 36 36"><path d="M18 3 32 13 18 33 4 13Z" fill="none" stroke="url(#gGold)" stroke-width="2"/><path d="M4 13h28M13 13l5 20 5-20M11 3.5 13 13l5-10 5 10 2-9.5" fill="none" stroke="url(#gGold)" stroke-width="1.4"/></symbol>
+  <symbol id="v-integrity" viewBox="0 0 36 36"><path d="M18 3 31 8v9c0 8-5.6 13.4-13 16-7.4-2.6-13-8-13-16V8Z" fill="none" stroke="url(#gGold)" stroke-width="2"/><path d="m12.5 18 4 4 7.5-8" fill="none" stroke="url(#gGold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="v-innovation" viewBox="0 0 36 36"><path d="M18 4a10 10 0 0 0-6 18v4h12v-4A10 10 0 0 0 18 4Z" fill="none" stroke="url(#gGold)" stroke-width="2" stroke-linejoin="round"/><path d="M13.5 30h9M15 33.5h6M18 26v-7l-3-3M18 19l3-3" fill="none" stroke="url(#gGold)" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="v-impact" viewBox="0 0 36 36"><circle cx="18" cy="18" r="14" fill="none" stroke="url(#gGold)" stroke-width="2"/><circle cx="18" cy="18" r="8.5" fill="none" stroke="url(#gGold)" stroke-width="1.6"/><circle cx="18" cy="18" r="3" fill="url(#gGold)"/><path d="M18 18 30 6M26 5.5h4.5V10" fill="none" stroke="url(#gGold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<!-- ============ LOGIN DIALOG (opened from the Log In button) ============ -->
+<div class="auth-modal" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" hidden>
+  <div class="auth-modal__backdrop" data-auth-close></div>
+  <div class="auth-card">
+    <button class="auth-card__close" type="button" data-auth-close aria-label="Close">&times;</button>
+    <img class="auth-card__logo" src="assets/img/zoe-logo.png?v=20261125j" alt="ZOE Research &amp; Development Consultancy Company Limited" width="260" height="104">
+    <div class="auth-tabs" role="tablist">
+      <button type="button" role="tab" data-go="login" aria-selected="true">Log In</button>
+      <button type="button" role="tab" data-go="register" aria-selected="false">Create Account</button>
+    </div>
+
+    <form class="auth-step" data-step="login" novalidate>
+      <h2 id="auth-title">Welcome back</h2>
+      <p class="auth-card__lead">Enter your login details to access the full ZOE website.</p>
+      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+      <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+      <p class="auth-msg" role="alert"></p>
+      <button class="btn btn--gold btn--lg btn--block" type="submit">Log In <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <p class="auth-card__switch">New to ZOE? <button type="button" class="linkish" data-go="register">Create an account</button></p>
+    </form>
+
+    <form class="auth-step" data-step="register" novalidate hidden>
+      <h2>Create your account</h2>
+      <p class="auth-card__lead">It takes less than a minute.</p>
+      <label>Full name<input name="name" type="text" autocomplete="name" required></label>
+      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+      <label>Password<input name="password" type="password" autocomplete="new-password" minlength="6" required></label>
+      <label>Confirm password<input name="confirm" type="password" autocomplete="new-password" minlength="6" required></label>
+      <p class="auth-msg" role="alert"></p>
+      <button class="btn btn--green btn--lg btn--block" type="submit">Create Account</button>
+      <p class="auth-card__switch">Already have an account? <button type="button" class="linkish" data-go="login">Log in</button></p>
+    </form>
+  </div>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+
+<header class="brandbar">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="ZOE Research &amp; Development Consultancy, home">
+      <img src="assets/img/zoe-logo.png?v=20261125j" alt="ZOE Research Consultancy logo" width="160" height="66">
+    </a>
+    <div class="brandbar__title">
+      <p class="brandbar__name">ZOE Research and Development Consultancy</p>
+      <p class="brandbar__slogan">Turning Problems into <span>Opportunities</span></p>
+    </div>
+    <div class="brandbar__actions">
+      <span class="user-chip" data-user-chip hidden><svg aria-hidden="true"><use href="#i-users"/></svg><span data-user-name></span></span>
+      <button class="btn btn--outline btn--sm" type="button" data-signout hidden>Sign Out</button>
+      <button class="btn btn--green btn--login" type="button" data-login-open><svg aria-hidden="true"><use href="#i-users"/></svg>Log In</button>
+      <a class="btn btn--gold" href="contact.html">Contact Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar" aria-label="Main">
+  <div class="container">
+    <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+    <ul class="nav__links" id="nav-links">
+      <li><a data-nav="home" href="index.html">Home</a></li>
+      <li><a data-nav="services" href="services.html">Services</a></li>
+      <li><a data-nav="about" href="about.html">About</a></li>
+      <li><a data-nav="purpose" aria-current="page" href="purpose.html">Our Purpose</a></li>
+      <li><a data-nav="industries" href="industries.html">Industry &amp; Market</a></li>
+      <li><a data-nav="portfolio" href="portfolio.html">Portfolio</a></li>
+      <li><a data-nav="testimonials" href="testimonials.html">Testimonials</a></li>
+      <li><a data-nav="contact" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="navbar__right">
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+<section class="page-hero">
+  <img class="page-hero__img" src="assets/img/photos/report-charts.jpg" alt="">
+  <div class="container">
+    <div class="page-hero__inner">
+      <ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li>Quality &amp; Ethics</li></ol>
+      <p class="eyebrow">Quality &amp; Ethics</p>
+      <h1>Trust is the product.</h1>
+      <p class="lead">A research firm is only as valuable as its integrity. These are the commitments we make to clients, participants and the public, and hold ourselves to.</p>
+      <div class="page-hero__chips"><a class="chip" href="#responsible-ai">Responsible AI</a><a class="chip" href="#data">Data Protection</a><a class="chip" href="#research-ethics">Research Ethics</a><a class="chip" href="#integrity">Academic Integrity</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="responsible-ai">
+  <div class="container">
+    <div class="principle reveal">
+      <p class="eyebrow">Responsible AI: Our Governing Principle</p>
+      <blockquote>AI assists ZOE researchers. It does not replace them, and it does not decide anything.</blockquote>
+      <p>ZOE uses artificial intelligence tools to support transcription, document search, data processing and drafting, under a written Responsible AI Policy. All AI-assisted outputs are reviewed and validated by a named ZOE researcher before delivery. AI is not used to generate findings, conclusions or recommendations.</p>
+    </div>
+
+    <div class="ppr mt-3 reveal-stagger">
+      <div class="ppr__col">
+        <h3><span class="ppr__dot" style="background:#186A63"></span>Permitted</h3>
+        <p class="muted">With human validation</p>
+        <ul class="ticks">
+          <li>Transcription, with at least 15% of each transcript spot-checked against the audio</li>
+          <li>Translation first-pass, verified by a fluent speaker</li>
+          <li>Literature search, with every cited source opened and verified</li>
+          <li>First-pass coding suggestions, each checked against the actual text</li>
+          <li>Drafting support: raw material, always rewritten by the researcher</li>
+          <li>Tables and charts, with every number verified against the dataset</li>
+        </ul>
+      </div>
+      <div class="ppr__col">
+        <h3><span class="ppr__dot" style="background:#F2C14E"></span>Restricted</h3>
+        <p class="muted">Case-by-case approval</p>
+        <ul class="ticks">
+          <li>Client-confidential information: only in a contracted enterprise instance with no training on inputs, and with your written consent</li>
+          <li>Personal data: only anonymised, or in an assessed, contracted instance</li>
+          <li>AI-assisted classification presented as a finding: method disclosed and validated on a human-coded subsample of at least 10%</li>
+          <li>Automated dashboards and briefings: reviewed by a named researcher on a stated cycle</li>
+        </ul>
+      </div>
+      <div class="ppr__col">
+        <h3><span class="ppr__dot" style="background:#A5372B"></span>Prohibited</h3>
+        <p class="muted">No exceptions</p>
+        <ul class="ticks crosses">
+          <li>Generating findings, conclusions or recommendations</li>
+          <li>Generating, imputing or completing research data</li>
+          <li>Generating quotes attributed to participants</li>
+          <li>Inventing or “improving” citations: every citation is opened and verified</li>
+          <li>Putting identifiable participant data into any AI tool</li>
+          <li>Automated decisions about individuals without human review</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted mt-2 reveal">Where a client’s contract prohibits AI use, we comply fully. A copy of our Responsible AI Policy is available on request.</p>
+  </div>
+</section>
+
+<section class="section section--dark" id="data">
+  <div class="container split split--center">
+    <div class="reveal">
+      <p class="eyebrow">Data Protection</p>
+      <h2>Your data stays yours.</h2>
+      <p class="lead">We handle personal data in line with Kenya’s Data Protection Act, 2019. Client documents, datasets and outputs belong to the client and are never used to train any external AI model.</p>
+    </div>
+    <ul class="ticks reveal">
+      <li>Data-processing agreements signed before any client data is handled</li>
+      <li>Lawful basis and informed consent confirmed for every dataset involving people</li>
+      <li>Participant data de-identified before analysis wherever possible</li>
+      <li>Access limited to the named project team, with permission models on every AI system</li>
+      <li>Client-confidential material never placed in public AI tools</li>
+      <li>Retention and deletion schedules agreed per project</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="research-ethics">
+  <div class="container">
+    <div class="section-head section-head--split reveal">
+      <div>
+        <p class="eyebrow">Research Ethics &amp; Quality</p>
+        <h2>Standards that protect participants and findings.</h2>
+      </div>
+      <p class="lead">Good research treats respondents with respect and treats evidence honestly.</p>
+    </div>
+    <div class="grid grid--3 reveal-stagger">
+      <article class="card"><h3>Informed consent</h3><p>Every participant knows who we are, why we are asking, how their information will be used, and that they may stop at any time.</p></article>
+      <article class="card"><h3>Ethics clearance</h3><p>Where a study requires ethical or regulatory approval, we obtain it before fieldwork, not after.</p></article>
+      <article class="card"><h3>Certified enumerators</h3><p>Field teams are trained and certified in interviewing, consent and data quality before they meet a respondent.</p></article>
+      <article class="card"><h3>Pre-registered analysis</h3><p>The analysis plan is written before data collection, so findings are discovered, not confirmed.</p></article>
+      <article class="card"><h3>Independent review</h3><p>Red Team Read, Associate Review and Client Verification on every study.</p></article>
+      <article class="card"><h3>Honest limitations</h3><p>We state plainly what the sample and method can and cannot support.</p></article>
+    </div>
+    <div class="mt-3 reveal"><blockquote class="pull-quote">We decline research designed to justify a decision already taken, and we report findings a client would rather not hear.<cite>ZOE research commitment</cite></blockquote></div>
+  </div>
+</section>
+
+<section class="section section--paper" id="integrity">
+  <div class="container container--narrow">
+    <div class="boundary reveal">
+      <p class="eyebrow">Academic Integrity</p>
+      <h3>We teach and we guide. We never write examinable work.</h3>
+      <p>ZOE provides training, guidance, methodological consultation and technical services to students and institutions. We do <strong>not</strong> write theses, dissertations or any examinable work, and we never permit our work to be presented as a student’s own authorship.</p>
+      <p class="mb-0 muted">This includes the use of AI: we will not use AI to produce examinable academic work for anyone.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Questions about how we work?</h2>
+        <p>Ask for our Responsible AI Policy or our data protection approach. We’re glad to share both.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a class="btn btn--gold" href="contact.html">Contact Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="index.html" aria-label="ZOE Research &amp; Development Consultancy, home"><img src="assets/img/zoe-logo.png?v=20261125j" alt="ZOE Research Consultancy logo" width="136" height="56"></a>
+        <p class="footer-slogan">Turning Problems into <span class="gold-text">Opportunities</span></p>
+        <p>Research, market intelligence, applied AI, innovation and training for organisations that need to make important decisions well.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About ZOE</a></li>
+          <li><a href="purpose.html">Our Purpose</a></li>
+          <li><a href="industries.html">Industry &amp; Market</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="approach.html">How We Work</a></li>
+          <li><a href="ethics.html">Quality &amp; Ethics</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#research">ZOE Research</a></li>
+          <li><a href="services.html#intelligence">ZOE Intelligence</a></li>
+          <li><a href="ai-lab.html">ZOE AI Lab</a></li>
+          <li><a href="services.html#innovation">ZOE Innovation</a></li>
+          <li><a href="academy.html">ZOE Academy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <p>Our phone numbers, email, WhatsApp and office location are on our Contact page.</p>
+        <a class="btn btn--gold mt-2" href="contact.html">Contact Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span data-year>2026</span> ZOE Research &amp; Development Consultancy Company Limited. All rights reserved.</span>
+    <span><a href="ethics.html#responsible-ai">Responsible AI</a> · <a href="ethics.html#data">Data Protection</a> · <a href="ethics.html#integrity">Academic Integrity</a></span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=20261125j" defer></script>
+</body>
+</html>

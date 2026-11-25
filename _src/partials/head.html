@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="#10263A">
+<meta property="og:site_name" content="ZOE Research & Development Consultancy">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css?v=20261125j">
+<script>
+  /* Colour mode before first paint: link override, saved choice, else light */
+  (function (d) {
+    d.classList.add('js');
+    var t = null;
+    try { t = new URLSearchParams(location.search).get('theme') || localStorage.getItem('zoe-theme'); } catch (e) {}
+    if (true) {
+      t = 'light';
+    }
+    d.setAttribute('data-theme', t);
+    var signedIn = false;
+    try { signedIn = !!localStorage.getItem('zoe-session'); } catch (e) {}
+    if (!signedIn) {
+      d.classList.add('gated');
+      /* Only the landing (home) page is public: send visitors there to log in */
+      if (!/(^|\/)(index\.html)?$/.test(location.pathname)) { location.replace('index.html?login=1'); }
+    }
+  })(document.documentElement);
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ZOE Research & Development Consultancy",
+  "slogan": "Turning Problems into Opportunities",
+  "telephone": "+254796808996",
+  "email": "info@zoeresearchconsultance.co.ke",
+  "address": { "@type": "PostalAddress", "streetAddress": "Wuyi Plaza, Westlands", "addressLocality": "Nairobi", "addressCountry": "KE" },
+  "openingHours": "Mo-Sa 08:00-17:00",
+  "areaServed": "East Africa"
+}
+</script>
+</head>
+<body>
